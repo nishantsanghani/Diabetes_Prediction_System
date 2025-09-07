@@ -34,17 +34,22 @@ The Diabetes Prediction System is a Machine Learning project that predicts wheth
 🤖 Modeling & Results
 
 - Without Hyperparameter Tuning
-  - Logistic Regression → 79%
-  - Support Vector Classifier (SVC) → 78%
-  - K-Nearest Neighbors (KNN) → 75%
-  - Random Forest → 77% (overfitting)
-  - Decision Tree → 73% (overfitting)
-  - XGBoost → 75% (overfitting)
+  - Logistic Regression → 75.58%
+  - Decision Tree → 67.46%
+  - Random Forest → 77.91%
+  - Gradient Boosting → 76.46%
+  - SVM → 75.29%
+  - Voting Classifier (CV) → 75.89%
+  - Stacking → 71.74%
+  - XGBoost → 71.01%
+  - SMOTE + SVM → 56.52%
+
 
  - With Hyperparameter Tuning
-  - Logistic Regression, SVC, KNN → improved to ~80%
-  - Decision Tree → improved, reduced overfitting
-  - Ensemble Models (Voting & Stacking) → stable at ~80%
+  - Model: SMOTE (Synthetic Minority Over-sampling Technique) + XGBoost
+  - Validation Strategy: Stratified K-Fold Cross-Validation with GridSearchCV for hyperparameter tuning
+  - Test Accuracy: 73.91%
+
 
 📌 Conclusion
 
